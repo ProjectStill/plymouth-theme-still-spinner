@@ -8,7 +8,7 @@ Summary:        stillOS Plymouth Theme
  
 License:        GPLv2+
 URL:            https://github.com/ProjectStill/plymouth-theme-still-spinner
-Source0:        https://github.com/ProjectStill/plymouth-theme-still-spinner/archive/refs/heads/%{branch}.tar.gz#/plymouth-theme-risi-spinner-main.tar.gz
+Source0:        https://github.com/ProjectStill/plymouth-theme-still-spinner/archive/refs/heads/%{branch}.tar.gz#/plymouth-theme-still-spinner-%{branch}.tar.gz
 
 BuildArch:      noarch
 Requires:       plymouth-plugin-two-step >= 0.7.0
@@ -18,7 +18,7 @@ Requires(post): plymouth-scripts
 Plymouth Theme for stillOS
 
 %prep
-%autosetup -n plymouth-theme-risi-spinner-main
+%autosetup -n plymouth-theme-still-spinner-%{branch}
 %build
 
 %install
